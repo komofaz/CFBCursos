@@ -1,0 +1,24 @@
+[ModificadorClasse] class NOME_DA_CLASSE{
+    // Variaveis / Propriedades
+    [EspecificadorAcesso] tipo NOME_PROPRIEDADE;
+
+    // Metodos
+    [EspecificadorAcesso] retorno NOME_METODO([arg1,...]){
+
+    }
+}
+
+// ModificadorClasse: Define a visibilidade da classe
+    // public: publica, sem restricao de visualizacao
+    // abstract: classe-base para outras classes, não podem ser instanciados objetos dessa classe
+    // sealed: classe não pode ser herdada
+    // static: ckasse não permite a instanciacao de objetos e seus membros devem ser static
+
+// EspecificadorAcesso: Onde um membro da classe pode ser acessado
+    // public: sem restricao de acesso
+    // private: so podem ser acessados pela propria classe
+    // protected: podem ser acessados na propria classe e nas classes derivadas
+    // abstract: os metodos não tem imprementacao somente os cabeçalhos, (usar classe pai que serao base para outras classes)
+    // sealed: o metodo não pode ser redefinido
+    // virtual: o metodo pode ser redefinido em uma classe derivada
+    // static: o metodo pode ser chamado mesmo sem a instanciacao de um objeto
